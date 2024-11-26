@@ -1,4 +1,4 @@
-# File-Sharing Website
+# News Website
 
 **Collaborated with:** Yerin Kang (GitHub username: yerin16)
 
