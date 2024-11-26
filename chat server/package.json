@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "mime": "^3.0.0",
+    "socket.io": "^4.8.1"
+  },
+  "name": "jeongwonlee",
+  "version": "1.0.0",
+  "description": "This is module 6 project.",
+  "main": "chat_server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
