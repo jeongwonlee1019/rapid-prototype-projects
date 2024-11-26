@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="login_div">
+        <h1>Log In</h1>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login_btn">Log In</button>
+    </div>
+
+    <div id="logout-div" class="logout-div">
+        <h1>Log Out</h1>
+        <button id="logout-btn">Log Out</button>
+    </div>
+
+    <div id="register_div">
+        <h1>Register</h1>
+        <input type="text" id="new_username" placeholder="New Username">
+        <input type="password" id="new_password" placeholder="New Password">
+        <button id="register_btn">Register</button>
+    </div>
+
+    <h1>Calendar</h1>
+    <div id="calendar_container">
+        <button id="prev-month-btn">Previous Month</button>
+        <span id="current-month"></span>
+        <button id="next-month-btn">Next Month</button>
+        <table id="calendar-table">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body">
+                <!-- Calendar rows will be dynamically generated here -->
+            </tbody>
+        </table>
+    </div>
+    
+    
+    <div id="event-form">
+        <h2>Add an Event</h2>
+        <input type="text" id="event-title" placeholder="Event Title">
+        <input type="time" id="event-time"><br>
+        <label>Select Category:</label>
+        <select id="event-category" required>
+            <option value="">Select event type</option>
+            <option value="meeting">Meeting</option>
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+            <option value="appointment">Appointment</option>
+            <option value="other">Other</option>
+        </select>
+    <div>
+        <input type="checkbox" id="group-event-checkbox"> 
+        <label for="group-event-checkbox">Make this a group event</label>
+    </div>
+
+    <div id="share-with-container" style="display: none;">
+        <label for="share-with">Share with (separate usernames with ","):</label>
+        <input type="text" id="share-with">
+    </div>
+    <p>
+        (Add by clicking on a date box)
+    </p>
+    </div>
+    
+    <div id="edit-event-form" class="edit-event-form" style="display: none;"> 
+        <h2>Edit an Event</h2>
+        <input type="hidden" id="edit-event-id"> 
+        <input type="text" id="edit-event-title" placeholder="Edit Event Title">
+        <input type="date" id="edit-event-date">
+        <input type="time" id="edit-event-time"><br>
+        <label>Select Category:</label>
+        <select id="edit-event-category" required>
+            <option value="">Select event type</option>
+            <option value="meeting">Meeting</option>
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+            <option value="appointment">Appointment</option>
+        </select><br>
+        <div>
+            <input type="checkbox" id="edit-group-event-checkbox"> 
+            <label for="edit-group-event-checkbox">Make this a group event</label>
+        </div>
+        <div id="edit-share-with-container" style="display: none;">
+            <label for="edit-share-with">Share with (separate usernames with ","):</label>
+            <input type="text" id="edit-share-with">
+        </div>
+        <button id="save-edit-event-btn">Save Changes</button>
+    </div>
+
+    <h2>Share Calendar</h2>
+    <div id="share-calendar">
+        <label for="recipient">Share your calendar with: </label>
+        <input type="text" id="recipient" placeholder="Username" required>
+        <button id="share-calendar-btn">Share</button>
+    </div>
+
+    <div id="category-filters">
+            <input type="checkbox" value="meeting" checked>
+            <label class="meeting-label">Meeting</label>
+            <input type="checkbox" value="work" checked>
+            <label class="work-label">Work</label>
+            <input type="checkbox" value="personal" checked>
+            <label class="personal-label">Personal</label>
+            <input type="checkbox" value="appointment" checked>
+            <label class="appointment-label">Appointment</label>
+            <input type="checkbox" value="other" checked> <!-- Changed value from 'appointment' to 'other' -->
+            <label class="other-label">Other</label>
+    </div>
+        <div id="calendar">
+        </div>
+    <script src="calendar.js"></script>
+</body>
+</html>
