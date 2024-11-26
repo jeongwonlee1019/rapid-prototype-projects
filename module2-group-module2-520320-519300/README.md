@@ -1,7 +1,4 @@
-# Project Name
-
-## Overview
-This is a file sharing website.
+# File-Sharing Website
 
 **Collaborated with:** Yerin Kang (GitHub username: yerin16)
 
