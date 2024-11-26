@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="login.php" method="POST">
+        <label>
+            Enter Your Username: <input type="text" name="username">
+        </label><br>
+        <label>
+            Enter Your Password: <input type="password" name="password">
+        </label><br>
+        <input type="submit" value="Login">
+    </form>
+    <hr>
+   
+    <h1>Register</h1>
+    <form action="register.php" method="POST">
+        <label>
+            Enter Your Desired Username: <input type="text" name="username">
+        </label><br>
+        <label>
+            Enter Your Desired Password: <input type="password" name="password">
+        </label><br>
+        <label>
+            What is your Favorite Food? (Security Question): <input type="text" name="question">
+        </label><br>
+        <input type="submit" value="Register">
+    </form>
+    <hr>
+
+    <h1>Forgot Password?</h1>
+    <form action="forgot_password.php" method="POST">
+        <label>
+            Enter Your Username: <input type="text" name="username">
+        </label><br>
+        <label>
+            What is your Favorite Food? (Security Question): <input type="text" name="question">
+        </label><br>
+        <label>
+            Enter Your New Password: <input type="password" name="newPassword">
+        </label><br>
+        <input type="submit" value="Reset Your Password">
+    </form>
+    <hr>
+
+    <h1>Continue as a Guest</h1>
+    <p>You can only view stories and comments.</p>
+    <a href="all_stories.php">Click here to view all stories.</a>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+    background-color: #99c2ac;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+hr {
+    border: none;  /* Remove the border */
+    border-top: 1px solid grey;
+    width: 30%;
+    margin: 20px auto;
+}
