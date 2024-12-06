@@ -1,4 +1,3 @@
-// Require the packages we will use:
 const http = require("http"),
      fs = require("fs");
 
