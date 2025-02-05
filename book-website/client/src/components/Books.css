@@ -1,0 +1,23 @@
+.small-image {
+    height: 200px; /* Smaller image height */
+    object-fit: cover; /* Ensure the image is cropped nicely */
+}
+
+.card-title {
+    font-size: 0.9rem; /* Smaller font size for title */
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit title to two lines */
+    -webkit-box-orient: vertical;
+}
+
+.card-text {
+    font-size: 0.8rem; /* Smaller font size for text */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit description to three lines */
+    -webkit-box-orient: vertical;
+}
