@@ -10,7 +10,7 @@
 * Users can choose to share their profiles with other group members. 
 
 ## Installation
-To run the server, simply download this repo and open port 3456. Then, start up the server with "node chat_server.js."
+To run the server, make sure port 3000 is open, run nodemon server/index.js, and go to http://localhost:3000/home. Also, make sure your IP address is added to MongoDB's whitelist for access.
 
 ## Technologies Used
 - JavaScript
