@@ -28,7 +28,7 @@ This repository contains a collection of full-stack web applications developed a
      - Real-time chat functionality with WebSocket integration.
      - Room creation and user moderation tools.
 
-### 5. **Book Tracking Website (Current Project; Not Committed Yet; Coming Soon!)**
+### 5. **Book Tracking Website
    - **Description:** A platform for users to search for books, track their reading progress, and discuss them with others.
    - **Key Features:**
      - Book search functionality using APIs.
