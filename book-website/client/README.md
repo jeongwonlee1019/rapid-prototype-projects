@@ -1,4 +1,4 @@
-# Chat Server
+# Book Website
 
 **Collaborated with:** Yerin Kang (GitHub username: yerin16)
 
